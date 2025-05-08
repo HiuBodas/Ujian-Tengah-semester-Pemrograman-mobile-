@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_background"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <!-- Gambar melebar landscape -->
+        <ImageView
+            android:id="@+id/registerImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pahlawan"
+            android:contentDescription="Gambar Pahlawan"
+            android:layout_marginBottom="24dp"
+            android:scaleType="centerCrop" />
+
+        <!-- Judul -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buat Akun Baru"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryColor"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Nama -->
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap"
+            android:backgroundTint="@color/accentColor"
+            android:textColor="@color/textColor"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/accentColor"
+            android:textColor="@color/textColor"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/accentColor"
+            android:textColor="@color/textColor"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Tombol -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/primaryColor" />
+    </LinearLayout>
+</ScrollView>
